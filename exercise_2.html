@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Assignment 3: Exercise 2</title>
+            <link rel="stylesheet" type="text/css" href="styles.css">
+            <script src="exercise_2.js"></script>
+        </head>
+        <body>
+            <h2>Greeting in Color</h2>
+            <hr>
+            <p>
+                Choose a color from the palette below
+            </p>
+            <div class="row">
+                <div class="column">
+                    <table class="styled-table" id="table_colors">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Color</th>
+                            </tr>
+                            <tr>
+                                <td>1</th>
+                                <td bgcolor="red" id="red_cell" onclick='print_greeting("red")'></th>
+                            </tr>
+                            <tr>
+                                <td>2</th>
+                                <td bgcolor="orange" id="orange_cell" onclick='print_greeting("orange")'></th>
+                            </tr>
+                            <tr>
+                                <td>3</th>
+                                <td bgcolor="yellow" id="yellow_cell" onclick='print_greeting("yellow")'></th>
+                            </tr>
+                            <tr>
+                                <td>4</th>
+                                <td bgcolor="green" id="green_cell" onclick='print_greeting("green")'></th>
+                            </tr>
+                            <tr>
+                                <td>5</th>
+                                <td bgcolor="blue" id="blue_cell" onclick='print_greeting("blue")'></th>
+                            </tr>
+                            <tr>
+                                <td>6</th>
+                                <td bgcolor="violet" id="violet_cell" onclick='print_greeting("violet")'></th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <p id="greeting" style="visibility:hidden">Hello world!</p>
+                </div>
+                <div class="column">
+                    <table id="table_history">
+                        <tr>
+                            <th>#</th>
+                            <th>Selected Color</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </body>
+    </html>
